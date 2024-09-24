@@ -77,12 +77,14 @@ document.getElementById('quota-protest-submit-btn')
 document.getElementById('donation-btn')
     .addEventListener('click', function(){
         showSectionById('donation-section');
+        selectedBtn('donation-btn');
 });
 
 // For History Section show
 document.getElementById('history-btn')
     .addEventListener('click', function(){
         showSectionById('history-section');
+        selectedBtn('history-btn');
 });
 
 

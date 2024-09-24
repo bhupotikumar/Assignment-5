@@ -23,6 +23,15 @@ function showSectionById(id){
 };
 
 
+// Selelcted Button
+function selectedBtn(id){
+    document.getElementById('donation-btn').classList.remove('bg-green-400')
+    document.getElementById('history-btn').classList.remove('bg-green-400')
+
+    document.getElementById(id).classList.add('bg-green-400')
+}
+
+
 
 // Function to get formatted current date and time
 function getCurrentFormattedDate() {
