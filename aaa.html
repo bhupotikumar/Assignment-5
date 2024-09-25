@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lexend Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Lexend Font Style -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="lexend-font scroll-smooth">
+    <!-- Header section -->
+    <header class="sticky top-0">
+    <!-- Nav-bar -->
+        <nav>
+            <!-- Nav-bar-top -->
+            <div class="bg-[#fdf5d1] bg-opacity-70 backdrop-blur-md">
+                <div class="max-w-screen-xl mx-auto navbar px-6 md:px-16 p-0">
+                    <div class="navbar-start">
+                        <button id="blog-btn" class="btn bg bg-lime-300 font-semibold text-lg" onclick="event.preventDefault(); window.location.href='./blog.html'" target="_blank">Blog</button>
+                    </div>
+                    <div class="navbar-center hidden md:flex sm:w-1/4 md:flex">
+                        <img class="p-4" src="./assets/logo.png" alt="">
+                        <h2>Donate Bangladesh</h2>
+                    </div>
+                    <div class="navbar-end">
+                        <img src="./assets/coin.png" alt="">
+                        <a class="text-xl"><span id="my-balence" class="px-4">5500</span>BDT</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Nav-bar-bottom -->
+            <div class="flex justify-center border-b bg-white bg-opacity-70 backdrop-blur-md gap-4 py-4">
+                <a id="donation-btn" class="btn text-lg font-semibold bg-green-400">Donation</a>
+                <a id="history-btn" class="btn text-lg font-semibold">History</a>
+            </div>
+        </nav>
+    </header> 
+</body>
+</html>
