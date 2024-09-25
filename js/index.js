@@ -1,11 +1,14 @@
-
-
 // For Noakhali
 document.getElementById('noakhali-submit-btn')
     .addEventListener('click', function (event) {
         event.preventDefault();
         const inputValue = getInputFieldValueById('noakhali-input-value');
         const myBalence = getTextFieldValueById('my-balence');
+
+        if (isNaN(inputValue) || inputValue>myBalence){
+            alert('Invalid Donate Amount');
+            return;
+        }
 
         const updatedDonateBalence = getTextFieldValueById('noakhali-donate-balence') + inputValue;
         const updatedMyBalence = myBalence - inputValue;
@@ -21,6 +24,7 @@ document.getElementById('noakhali-submit-btn')
         <p class="text-base font-light">${getCurrentFormattedDate()}</p>
         `
         document.getElementById('history-section').appendChild(div);
+        showModalById('confirmation-modal');
     });
 
 
@@ -30,6 +34,11 @@ document.getElementById('feni-submit-btn')
         event.preventDefault();
         const inputValue = getInputFieldValueById('feni-input-value');
         const myBalence = getTextFieldValueById('my-balence');
+
+        if (isNaN(inputValue) || inputValue>myBalence){
+            alert('Invalid Donate Amount');
+            return;
+        }
 
         const updatedDonateBalence = getTextFieldValueById('feni-donate-balence') + inputValue;
         const updatedMyBalence = myBalence - inputValue;
@@ -55,6 +64,11 @@ document.getElementById('quota-protest-submit-btn')
         event.preventDefault();
         const inputValue = getInputFieldValueById('quota-protest-input-value');
         const myBalence = getTextFieldValueById('my-balence');
+
+        if (isNaN(inputValue) || inputValue>myBalence){
+            alert('Invalid Donate Amount');
+            return;
+        }
 
         const updatedDonateBalence = getTextFieldValueById('quota-protest-donate-balence') + inputValue;
         const updatedMyBalence = myBalence - inputValue;
@@ -88,37 +102,7 @@ document.getElementById('history-btn')
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-// let activeButtonId = 'donation-btn'; // Track the currently active button
-
-// function clickOnButton(id) {
-//     const button = document.getElementById(id);
-    
-//     button.addEventListener('click', (event) => {
-//         // Reset the previously active button
-//         if (activeButtonId) {
-//             const previousButton = document.getElementById(activeButtonId);
-//             previousButton.style.backgroundColor = ''; // Reset background color
-//         }
-
-//         // Set the clicked button to lime color
-//         button.style.backgroundColor = 'lime'; 
-//         activeButtonId = id; // Update the active button ID
-//     });
-// }
-
-// // Initialize buttons
-// clickOnButton('donation-btn');
-// clickOnButton('history-btn');
-// clickOnButton('blog-btn');
-// document.getElementById(activeButtonId).style.backgroundColor = 'lime';
+// For Modal show
+document.getElementById('modal-close-btn').addEventListener('click', function(){
+    hiddenTheModalById('confirmation-modal');
+})

@@ -12,7 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <!-- Lexend Font Style -->
-     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="lexend-font scroll-smooth">
     <!-- Header section -->
@@ -36,18 +38,18 @@
                 </div>
             </div>
             <!-- Nav-bar-bottom -->
-            <div class="flex justify-center bg-white bg-opacity-70 backdrop-blur-md gap-4 py-4 pt-10">
+            <div class="flex justify-center border-b bg-white bg-opacity-70 backdrop-blur-md gap-4 py-4">
                 <a id="donation-btn" class="btn text-lg font-semibold bg-green-400">Donation</a>
                 <a id="history-btn" class="btn text-lg font-semibold">History</a>
             </div>
         </nav>
     </header>
     <!-- Main section -->
-    <main class="max-w-screen-xl space-y-6 sm:mx-auto md:mx-auto my-6 sm:p-8 md:px-20">
+    <main class="max-w-screen-xl sm:mx-auto md:mx-auto sm:p-4 md:px-20">
         <!-- Donation section -->
-        <div id="donation-section" class="">
+        <div id="donation-section" class="space-y-6">
             <!-- Card 1 -->
-            <div class="sm:grid sm:grid-cols-1 md:grid-cols-2 gap-6 p-6 border rounded-2xl items-center">
+            <div class="sm:grid sm:grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded-2xl items-center">
                 <!-- Card img -->
                 <figure>
                   <img class="rounded-xl"
@@ -69,7 +71,7 @@
                 </div>
             </div>
             <!-- Card 2 -->
-            <div class="sm:grid sm:grid-cols-1 md:grid-cols-2 gap-6 p-6 border rounded-2xl items-center">
+            <div class="sm:grid sm:grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded-2xl items-center">
                 <!-- Card img -->
                 <figure>
                   <img class="rounded-xl"
@@ -91,7 +93,7 @@
                 </div>
             </div>
             <!-- Card 3 -->
-            <div class="sm:grid sm:grid-cols-1 md:grid-cols-2 gap-6 p-6 border rounded-2xl items-center">
+            <div class="sm:grid sm:grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded-2xl items-center">
                 <!-- Card img -->
                 <figure>
                   <img class="rounded-xl"
@@ -115,21 +117,19 @@
         </div>
         <!-- History section -->
         <div id="history-section" class="hidden">
-
         </div>
+        <!-- Moddal -->
+         <section id="confirmation-modal" class="hidden flex items-center justify-center fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-screen h-screen">
+            <div class="z-15 absolute w-full h-full bg-black opacity-50"></div>
+             <div class="z-20 bg-white border w-2/5 rounded-xl shadow-xl p-4 flex flex-col items-center space-y-2">
+                 <h2 class="font-bold text-4xl">Congratulations!</h2>
+                 <img src="./assets/coin.png" alt="">
+                 <p class="font-light text-gray-500">You Have Donated for Humankind</p>
+                 <h3 class="font-bold text-2xl">Successfully</h3>
+                 <button id="modal-close-btn" class="btn">Close Confirmation</button>
+             </div>
+         </section>
     </main>
-
-
-
-
-
-    <!-- Footer section -->
-    <footer>
-
-    </footer>
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- JS -->
      <script src="./js/utilities.js"></script>

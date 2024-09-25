@@ -1,9 +1,10 @@
-
 // Calling value of input field
 function getInputFieldValueById(id){
     const inputValue = document.getElementById(id).value;
     const inputValueNumber = parseFloat(inputValue);
     return inputValueNumber;
+    
+    
 };
 
 
@@ -22,6 +23,15 @@ function showSectionById(id){
     document.getElementById(id).classList.remove('hidden');
 };
 
+function showModalById(id){
+    document.getElementById(id).classList.remove('hidden');
+}
+
+
+function hiddenTheModalById(id){
+    document.getElementById(id).classList.add('hidden');
+}
+
 
 // Selelcted Button
 function selectedBtn(id){
@@ -30,7 +40,6 @@ function selectedBtn(id){
 
     document.getElementById(id).classList.add('bg-green-400')
 }
-
 
 
 // Function to get formatted current date and time
