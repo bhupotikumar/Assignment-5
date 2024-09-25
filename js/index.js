@@ -18,7 +18,7 @@ document.getElementById('noakhali-submit-btn')
 
         // create a history
         const div = document.createElement('div');
-        div.classList.add('mb-6', 'bg-gray-100','border', 'rounded', 'shadow-lg', 'p-6', 'space-y-2');
+        div.classList.add('mx-auto','w-5/6', 'md:w-10/12', 'mb-6', 'bg-gray-100','border', 'rounded', 'shadow-lg',  'p-6', 'space-y-2');
         div.innerHTML = `
         <h3 class="text-xl font-bold">${inputValue} Taka is Donated for famine-2024 at Noakhali, Bangladesh</h3>
         <p class="text-base font-light">${getCurrentFormattedDate()}</p>
@@ -48,7 +48,7 @@ document.getElementById('feni-submit-btn')
 
         // create a history
         const div = document.createElement('div');
-        div.classList.add('mb-6', 'bg-gray-100','border', 'rounded', 'shadow-lg', 'p-6', 'space-y-2');
+        div.classList.add('mx-auto','w-5/6', 'md:w-10/12', 'mb-6', 'bg-gray-100','border', 'rounded', 'shadow-lg', 'p-6', 'space-y-2');
         div.innerHTML = `
         <h3 class="text-xl font-bold">${inputValue} Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
         <p class="text-base font-light">${getCurrentFormattedDate()}</p>
@@ -79,7 +79,7 @@ document.getElementById('quota-protest-submit-btn')
 
         // create a history
         const div = document.createElement('div');
-        div.classList.add('mb-6', 'bg-gray-100','border', 'rounded', 'shadow-lg', 'p-6', 'space-y-2');
+        div.classList.add('mx-auto','w-5/6', 'md:w-10/12', 'mb-6', 'bg-gray-100','border', 'rounded', 'shadow-lg', 'p-6', 'space-y-2');
         div.innerHTML = `
         <h3 class="text-xl font-bold">${inputValue} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h3>
         <p class="text-base font-light">${getCurrentFormattedDate()}</p>
