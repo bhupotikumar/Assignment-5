@@ -54,6 +54,7 @@ document.getElementById('feni-submit-btn')
         <p class="text-base font-light">${getCurrentFormattedDate()}</p>
         `
         document.getElementById('history-section').appendChild(div);
+        showModalById('confirmation-modal');
     });
 
 
@@ -84,6 +85,7 @@ document.getElementById('quota-protest-submit-btn')
         <p class="text-base font-light">${getCurrentFormattedDate()}</p>
         `
         document.getElementById('history-section').appendChild(div);
+        showModalById('confirmation-modal');
     });
 
 
